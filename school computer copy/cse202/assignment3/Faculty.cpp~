@@ -1,0 +1,38 @@
+/*
+Name: Brian Ackley
+Assignment 3
+File: Employee.cpp
+Description: Functions for the Faculty class
+*/
+
+#include "Faculty.h"
+#include <string>
+using namespace std;
+
+Faculty::Faculty()
+{
+   frank = "";
+   fstatus = "";
+}
+
+Faculty::Faculty(string n, string addr, string tele, string mail, string offc, string slry, string hdate, string rank, string stat)
+:Person(n, addr, tele, mail), Employee(n, addr, tele, mail, offc, slry, hdate)
+{
+   frank = rank;
+   fstatus = stat;
+}
+
+string Faculty::getRank()
+{
+   return frank;
+}
+
+string Faculty::getFStatus()
+{
+   return fstatus;
+}
+
+string Faculty::whatami()
+{
+   return "Faculty";
+}

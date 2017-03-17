@@ -1,0 +1,38 @@
+/*
+Name: Brian Ackley
+CSE 330
+Lab 7
+*/
+
+#include "Node.h"
+#include <iostream>
+using namespace std;
+
+void print_node(Node * n);
+
+int main()
+{
+   Node * node1 = new Node(8);
+
+   node1->add_value(3);
+   node1->add_value(12);
+
+   for (int i = 0; i < 10; i++)
+   {
+      node1->add_value(i);
+   }
+   print_node(node1);
+   cout << endl << endl;
+}
+
+
+void print_node(Node * n)
+{
+   if (n == 0)
+     return;
+   if (n->left != 0)
+      print_node(n->left);
+   cout << n->value << " ";
+   if (n->right != 0)
+      print_node(n->right);
+}

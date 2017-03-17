@@ -1,0 +1,16 @@
+Script started on Sun 03 Nov 2013 11:30:11 PM PST
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse330 $[00m clearscript main[6Pcleard Documents/cse330/lab3g++ -o lab3 ListMain.cppclear[Kg++ -o lab3 ListMain.cppclear[Kg++ -o lab3 ListMain.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kassignment2 assignment2.cpp
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse330 $[00m ./assignment2
+Vector 1: 7 15 33 3 11 22 10 50 31 7 
+
+Vector 2: 5 43 20 25 1 4 16 27 7 44 
+
+Vector 1 sorted: 3 7 7 10 11 15 22 31 33 50 
+
+Vector 2 sorted: 1 4 5 7 16 20 25 27 43 44 
+
+Vector 1 & 2 combined, & sorted: 1 3 4 5 7 7 7 10 11 15 16 20 22 25 27 31 33 43 44 50 
+
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse330 $[00m exit
+
+Script done on Sun 03 Nov 2013 11:30:38 PM PST

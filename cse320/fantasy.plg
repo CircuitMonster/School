@@ -1,0 +1,99 @@
+% Generate a random story from productions of form Nonterminal=>Expression
+:-op(600, xfy, =>).
+
+story([]).
+story(A * B):- story(A), story(B).
+story(A  +  B):-makelist(A  +  B, L),
+	length(L, M),
+	P is random( M)+1,!,
+	nth1(P, L, X), 
+	story(X).
+story(A):- A => B, !, story(B).
+story(A):-atomic(A),  write(A), nl.
+
+makelist(A  +  B, [A|C]):-makelist(B,C).
+makelist(A, [A]).
+
+go:-story(start), write('-------------the end--------------'), nl.
+ 
+:- write('Enter go. to be told stories.'), nl.
+
+start=>'The Elven village of Rivendell'*(invasion + magic +  attack +  besieged).
+invasion=>(('is invaded by a horde of orcs' +  'is pillaged by barbarians' +  'is raided by troll warriors')
+	*'and'
+	*possible_megadeath
+).
+besieged=>('is laid siege by'
+		*('catapults' +  'trebuchets' +  'ballistas')
+		*('but is saved.' +  'and is destroyed.' + saved
+		 )
+	 ).
+possible_megadeath=>('everybody dies.' + ('some people'+ 'everybody' +  'almost everbody')*('dies.'+rescued+saved)).
+rescued=>('is rescued by'*sizes*monster*beings).
+saved=>('but is saved by'*('allied'+monster)* 'wizards.'* 'The'*magic).
+magic=>('wizards'*('summon' + 'conjure')*sizes*beings*whichetc).
+attack=>('is attacked by'*sizes*monster*beings*whichetc).
+sizes=>('gargantuan' + 'giant' + 'titanic').
+monster=>('dragon' + 'ogre' +  'undead').
+beings=>('warriors' +  'wizards' +  'knights' + 'demons').
+whichetc=>
+('who'
+*(wanttreasure+ 
+	 ('are evil'
+	  *('.' + 
+	   ('and'*(denoument + happyending)
+           ) 
+         ) + ( 
+		('are evil'*'and cunning' + 
+		 'wish to enslave the villagers' + 
+		 'wish to slaughter all residents' + 
+		 hungry
+		)
+		*butetc
+	      ) +  
+	      (hungry * ('and eat them.'+denoument)
+              )
+	)
+ )
+).
+hungry=> 'seek to feed on the corpses of the populace'.
+wanttreasure=>'seek the vast treasure garnered by the village over many generations'.
+butetc=>('and are' + 'and are not')*'evil'*'and'*try_to_kill.
+killers=>(killer +  killer*'and'*killer ).
+killer=>('a crowd of peasants' 
+	+  'the Army'
+	 +  'the Navy'
+	 +  'the Air Force'
+	 + 'the Marines'
+	 +  'the Coast Guard'
+	 + 'the Atom Bomb'
+	).
+try_to_kill=>(('can be killed by'*killers*'.') + 
+		 ('can not be killed by'*killers*soetc)).
+soetc=>('but they die from catching a cold.' + 
+	'so they kill us.' + 
+	'so they put us under a benign dictatorship.' + 
+	'so they eat us.' + 
+	('so scientists invent a weapon'
+		*('which turns them into disgusting lumps' + 
+		  'which kills them' + 
+		  'which fails,'*soetc)
+	) + 
+	('But'*denoument)
+).
+denoument=>(('a sign from the heavens scares them.' *ending) + 
+	    ('a great hero conquers their leader,'*ending) + 
+	    ('they find a much easier village to pillage'
+	     *(ending +  happyending)
+	    )
+	   ).
+ending=>('and they die.' + 
+	 'and they leave.' + 
+	 'and they retreat in terror.'
+	).
+happyending=>'and they live in peace and harmony for many generations'.
+
+grammar:-Nonterminal=>Expansion,  write(Nonterminal), 
+	 write(' ---> '), nl,  write('    '), write(Expansion), nl, nl,
+	 fail.
+:- write('Enter grammar. to list the rules generating the stories.'), nl.

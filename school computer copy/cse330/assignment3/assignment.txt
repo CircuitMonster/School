@@ -1,0 +1,7 @@
+Name: Brian Ackley
+CSE 330
+Assignment 3
+
+Part 2:
+
+   The treesort function has the log time of 0(n log n), and the reasoning to this is that its very simular to a sorted set. An ordered set has the log time of 0(log n) which to search through is realitivly easy because everything is in order and all the program has to do is search by halfs. With that of an unorganized set, searching through it becomes a little more of a task. Instead of going through half by half to find what is needed, it now has to go through the set looking for the key items and then putting those items into a new set which will then be organized. This results in either being effeciant or inefficiant dependant on how mixed up the origanle set is.

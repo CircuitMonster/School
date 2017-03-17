@@ -1,0 +1,27 @@
+/*
+Name: Brian Ackley
+Assignment 3
+File: Faculty.h
+Description: interface for the Faculty class
+*/
+
+#ifndef FACULTY_H
+#define FACULTY_H
+#include <string>
+#include "Employee.h"
+using namespace std;
+
+class Faculty: public Employee
+{
+public: 
+   Faculty();
+   Faculty(string n, string addr, string tele, string mail, string offc, string slry, string hdate, string rank, string stat);
+   string getRank();	//professor, associate, assistant, lecturer
+   string getFStatus();	//tenured, tenure-track, visiting, non-tenure-track
+   virtual string whatami();
+
+private:
+   string frank;
+   string fstatus;
+};
+#endif

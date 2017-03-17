@@ -1,0 +1,12 @@
+#coins.txt
+   gold     1    1986  USA                 American Eagle
+   gold     1    1908  Austria-Hungary     Franz Josef 100 Korona
+   gold     1    1984  Switzerland         ingot
+   gold     1    1979  RSA                 Krugerrand
+   gold     0.5  1981  RSA                 Krugerrand
+   gold     0.1  1986  PRC                 Panda
+   gold     0.25 1986  USA                 Liberty 5-dollar piece
+   gold     0.25 1987  USA                 Constitution 5-dollar piece
+   gold     1    1988  Canada              Maple Leaf
+   silver   0.5    1988  Canada              Maple Leaf
+   silver   0.25    1989  Canada              Maple Leaf

@@ -1,0 +1,11 @@
+Script started on Tue 26 May 2015 04:34:53 PM PDT
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse461/lab6 $[00m g++ -o Shell Shell.cpp
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse461/lab6 $[00m ./Shell
+Create disk disk1
+$dir
+$add file1
+no space left
+Segmentation fault
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse461/lab6 $[00m exit
+
+Script done on Tue 26 May 2015 04:35:21 PM PDT

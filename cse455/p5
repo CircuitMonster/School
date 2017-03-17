@@ -1,0 +1,19 @@
+Script started on Mon 02 Mar 2015 02:50:15 PM PST
+]0;002505606@jb359-5:/students/csci/002505606/cse455[?1034h[002505606@jb359-5 cse455]$ g++ -o program5 program5.cpp
+]0;002505606@jb359-5:/students/csci/002505606/cse455[002505606@jb359-5 cse455]$ ./program5
+enter in your value for x high
+-1.1
+0.00089
+0.135575
+enter in your value for x high
+0.2
+0.00102
+0.579068
+enter in your value for x high
+2.5
+0.00125
+0.993794
+]0;002505606@jb359-5:/students/csci/002505606/cse455[002505606@jb359-5 cse455]$ exit
+exit
+
+Script done on Mon 02 Mar 2015 02:51:07 PM PST

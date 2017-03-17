@@ -1,0 +1,10 @@
+:-dynamic(fourth/2).
+square(X,X2):-X2 is X*X.
+fourth(X,X4):-square(X,X2), square(X2,X4), assert_if_new(fourth(X,X4)).
+
+% utility predicate: If known fact - OK!, or-else add it to the data base
+assert_if_new(Fact):-clause(Fact, true), ! ;
+	asserta(Fact).
+% notice the use of a cut(!) to make sure that both alternatives
+% can not be done together by backtracking
+

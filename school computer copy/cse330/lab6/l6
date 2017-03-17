@@ -1,0 +1,8 @@
+Script started on Wed 06 Nov 2013 03:13:23 PM PST
+]0;002505606@jb358-6:/students/csci/002505606/cse330[?1034h[002505606@jb358-6 cse330]$ lscd cse330gedit hw2assignment2.cpp&[1Pcd cse330/assignment2[12Pgedit hw2assignment2.cpp&clear[K./assignment2g++ -o assignment2 assignment2.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pcd assignment2g++ -o assignment2 assignment2.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klab6 StackMain.cpp
+StackMain.cpp: In function ‘int postfix_calc(std::string)’:
+StackMain.cpp:71: error: no matching function for call to ‘Stack<int>::push(int)’
+Stack.h:14: note: candidates are: void Stack<T>::push(T&) [with T = int]
+]0;002505606@jb358-6:/students/csci/002505606/cse330[002505606@jb358-6 cse330]$ exit
+
+Script done on Wed 06 Nov 2013 03:13:44 PM PST

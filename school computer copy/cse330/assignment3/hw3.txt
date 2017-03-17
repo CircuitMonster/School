@@ -1,0 +1,76 @@
+CSE 330 Homework Assignment 3
+
+
+(10 points total)
+
+Problem 1:
+
+(8 pts)
+Implement the TREESORT function after the following algorithm:
+
+Given: * a vector filled with N values of some type T; not in order; 
+       * and empty set<T>
+
+Step1: Iterate over the vector and insert each vector element into
+       the Set;
+
+Step2: Iterate over the set, and copy the first set element into 
+       [0] of vector, the second set element into [1] of vector, 
+       etc. 
+
+.... the vector is now in sorted order.
+
+
+You should use STL <vector> and <set>. You want make use of 
+set<T>::iterator.
+
+The function should be of the following kind:
+
+template <class T>
+void treesort(vector<T>& vec)
+{
+  .....
+}
+
+In main(), call treesort on the vector that you filled with
+values.
+
+e.g.,
+
+int main()
+{
+  vector<int> myvec;
+
+  for (....)
+   ... fill vector with values ...
+
+  print out before ...
+
+  treesort(myvec);
+
+  print out after ...
+
+  return 0;
+}
+
+
+Test with 3 set of reasonably many input values; 
+Hand in .cpp file and typescript.
+
+Problem 2: 
+
+(2 pts)
+
+Treesort is a O(n log n) sorting function on average.
+Explain why in your own words. State your rational
+in concise and compelling language. 
+
+ 
+This assignment is due on Wednesday, 11/27, at lecture 
+time. 
+
+ 
+ 
+
+
+

@@ -1,0 +1,20 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	DIV                     3034
+//	DIV_END                 3047
+//	DIV_START_LOOP          3040
+//	DIV_XY                  300E
+//	MOD_XY                  300F
+//	MULT                    3015
+//	MULT_END_LOOP           302C
+//	MULT_SAVE_END           3030
+//	MULT_START_LOOP         3027
+//	MULT_XPOS               3021
+//	MULT_XY                 300D
+//	R0_SAVE                 3010
+//	R1_SAVE                 3011
+//	R2_SAVE                 3012
+//	R3_SAVE                 3013
+//	R4_SAVE                 3014
+//	X                       300B
+//	Y                       300C

@@ -1,0 +1,27 @@
+% A Logic Puzzle Sample -- fourth attempt
+:-style_check(-singleton).
+go:-solution(X), display(X), fail.
+display([A,B,C]):-println(A),println(B), println(C), println('===========').
+println(X):-write(X), nl.
+
+% A Sample Logic Problem. [ Original logic problems, July 1990, p 5]
+% Angela, David and Mae are the young stars in a talent show.
+% Their ages are 5,7, and 8. One has last name Starr.
+% Miss Grant is three years older than Angela.
+% The child whose last name is Diamond is seven years old
+%
+solution(X):-
+	X=[ child(angela,_,_,female),
+	    child(david,_,_,male),
+	    child(mae,_,_,female)
+	  ],
+	member(child(_,_,5,_),X),
+	member(child(_,_,7,_),X),
+	member(child(_,_,8,_),X),
+	member(child(_,diamond,7,_), X),
+	member(child(_,starr,_,_), X),
+	member(child(_,grant,A,female), X),
+	member(child(angela,_,B,_),X),
+	A is B+3.
+
+:- write('Puzzle loaded'), nl,nl.

@@ -1,0 +1,126 @@
+Script started on Mon 18 Nov 2013 01:30:02 PM PST
+]0;002505606@jb358-6:/students/csci/002505606/cse330[?1034h[002505606@jb358-6 cse330]$ clear./lab8g++ -o lab8 SetMain.cppclear[Kg++ -o lab8 SetMain.cppclear[Kg++ -o lab8 SetMain.cppclear[Kg++ -o lab8 SetMain.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kselsort SelSort.cpp
+]0;002505606@jb358-6:/students/csci/002505606/cse330[002505606@jb358-6 cse330]$ ./selsort
+
+Enter Size of Vector: 5
+
+Enter an integer value:32
+
+Enter an integer value:3
+
+Enter an integer value:6
+
+Enter an integer value:8
+
+Enter an integer value:7
+Number of calculations is: 10
+3 6 7 8 32 
+
+Enter Size of Vector: 8
+
+Enter an integer value:21
+
+Enter an integer value:5
+
+Enter an integer value:6
+
+Enter an integer value:87
+
+Enter an integer value:77
+
+Enter an integer value:55
+
+Enter an integer value:7
+
+Enter an integer value:24
+Number of calculations is: 28
+5 6 7 21 24 55 77 87 
+
+Enter Size of Vector: 10
+
+Enter an integer value:44
+
+Enter an integer value:65
+
+Enter an integer value:7
+
+Enter an integer value:32
+
+Enter an integer value:8
+
+Enter an integer value:76
+
+Enter an integer value:43
+
+Enter an integer value:9
+
+Enter an integer value:2
+
+Enter an integer value:5
+Number of calculations is: 45
+2 5 7 8 9 32 43 44 65 76 
+
+Enter Size of Vector: 12
+
+Enter an integer value:65
+
+Enter an integer value:7
+
+Enter an integer value:8
+
+Enter an integer value:9
+
+Enter an integer value:43
+
+Enter an integer value:22
+
+Enter an integer value:66
+
+Enter an integer value:54
+
+Enter an integer value:4
+
+Enter an integer value:2
+
+Enter an integer value:6
+
+Enter an integer value:7
+Number of calculations is: 66
+2 4 6 7 7 8 9 22 43 54 65 66 
+
+Enter Size of Vector: 15
+
+Enter an integer value:77
+
+Enter an integer value:65
+
+Enter an integer value:100
+
+Enter an integer value:44
+
+Enter an integer value:765 
+
+Enter an integer value:18
+
+Enter an integer value:71
+
+Enter an integer value:45
+
+Enter an integer value:99
+
+Enter an integer value:74  83
+
+Enter an integer value:53
+
+Enter an integer value:52
+
+Enter an integer value:7
+
+Enter an integer value:1
+
+Enter an integer value:9
+Number of calculations is: 105
+1 7 9 18 44 45 52 53 65 71 76 77 83 99 100 
+]0;002505606@jb358-6:/students/csci/002505606/cse330[002505606@jb358-6 cse330]$ exit
+
+Script done on Mon 18 Nov 2013 01:32:15 PM PST

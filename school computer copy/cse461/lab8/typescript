@@ -1,0 +1,12 @@
+Script started on Tue 09 Jun 2015 04:57:17 PM PDT
+]0;002505606@jb358-13:/students/csci/002505606/cse461/lab8[?1034h[002505606@jb358-13 lab8]$ gedit lab3.cppls[Kgedit lab3.cpp[Kg++ -o main mina[K[Kain[K[K[K[Kain.cpp
+]0;002505606@jb358-13:/students/csci/002505606/cse461/lab8[002505606@jb358-13 lab8]$ ./main
+Create disk disk
+Enter the Date: 50
+
+
+]0;002505606@jb358-13:/students/csci/002505606/cse461/lab8[002505606@jb358-13 lab8]$ ^C
+]0;002505606@jb358-13:/students/csci/002505606/cse461/lab8[002505606@jb358-13 lab8]$ ^C
+]0;002505606@jb358-13:/students/csci/002505606/cse461/lab8[002505606@jb358-13 lab8]$ exit
+
+Script done on Tue 09 Jun 2015 04:57:41 PM PDT

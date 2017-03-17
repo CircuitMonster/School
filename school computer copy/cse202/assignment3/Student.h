@@ -1,0 +1,25 @@
+/*
+Name: Brian Ackley
+Assignment 3
+File: Student.h
+Description: interface for the student class
+*/
+
+#ifndef STUDENT_H
+#define STUDENT_H
+#include <string>
+#include "Person.h"
+using namespace std;
+
+class Student: public virtual Person
+{
+public:
+   Student();
+   Student(string n, string addr, string tele, string mail, string stat);
+   string getSStatus();	//freshman, sophomore, junior, or senior
+   virtual string whatami();
+
+private:
+   string sstatus;
+};
+#endif

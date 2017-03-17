@@ -1,0 +1,55 @@
+/* 
+Name: Brian Ackley
+Date: 1-15-13
+Lab #2
+File: fall.cpp
+Description: Program displays a circle, at a giving altitude, dropping at velocity and adjusting to
+		different variables. the variables include terminal velocity and parachute deploying.
+*/
+
+#include "ccc_win.h"
+
+using namespace std;
+
+int ccc_win_main()
+{
+  cwin.coord (-100, 1000, 1000, -100);
+
+  int velocity = 0;
+  int time = 0;
+  int opentime = 6;
+  int altitude = 980;
+
+  Circle c(Point(100, altitude), 30);
+  cwin << c;
+  
+  while (altitude >= 0)		//checks altitude above 0/ ground
+  {
+     if (time < opentime)	//checks before parachute deploys
+     {
+        velocity += 32;
+	if (velocity >= 174)	//checks terminal velocity
+	{
+	   velocity = 174;
+	}
+     }
+     else	//check when parachute deploys
+     {
+	velocity -= 100;
+	if (velocity < 17)
+	{
+	   velocity = 17;
+	}
+     }
+     c.move(0, -velocity);
+     cwin << c;		//displays circle
+     altitude = altitude-velocity;	//updates altitude
+     time++;		//incriments time
+  }
+ 
+ Line s(Point(0, 0), Point(1000, 0));	//Ground line
+ cwin << s ;
+ return 0;
+
+}
+  

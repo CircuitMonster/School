@@ -1,0 +1,53 @@
+Assignment 1 Answers
+
+1. 56
+
+2.	int i = 0;
+	while (i < 7)
+	{
+		cout << 2 * i;
+		++i
+	}
+
+3. 100 times
+
+4. 1736
+
+5. 0, .5
+
+6. 10
+
+7.	int i = 0;
+	int sum = 0;
+	while (i <= n)
+	{
+		sum = sum + i;
+		++i;
+	}
+
+
+8.	for (int i = 330; i < 350; ++i)
+	{
+		cout << i
+	}
+
+
+9.	cout << "Enter a number between 3 and 12."
+	cin >> i
+	{
+		if (3 < = i <= 12)
+		
+		cout << "good number.";
+	
+		else
+		
+		cout << "bad number.";
+	}
+
+
+10.	int i;
+	cin >> i;
+	if (i % 2 == 2)
+	{
+		cout << "even number"
+	}

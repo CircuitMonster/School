@@ -1,0 +1,8 @@
+Script started on Tue 21 Apr 2015 03:23:53 PM PDT
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse461 $[00m ./lab2
+Create disk test1
+Should be 32 1s : 11111111111111111111111111111111
+Should be 32 2s : 22222222222222222222222222222222
+[01;32mturbo@turbo-VPCCW21FX[01;34m ~/Documents/cse461 $[00m exit
+
+Script done on Tue 21 Apr 2015 03:24:01 PM PDT

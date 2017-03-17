@@ -1,0 +1,50 @@
+Script started on Wed 27 Nov 2013 11:52:54 AM PST
+]0;002505606@jb358-6:~/cse330/lab9[?1034h[002505606@jb358-6 lab9]$ g++ -o lab9 SetMain.cpp[CPMain.cppaMain.cppiMain.cpprMain.cpp
+]0;002505606@jb358-6:~/cse330/lab9[002505606@jb358-6 lab9]$ ./lab9
+Chose a Car Manufacture: ferrari
+How Many Cars Would You Like? 15
+
+Chose a Car Manufacture: porsche
+How Many Cars Would You Like? 10
+
+Chose a Car Manufacture: bmw
+How Many Cars Would You Like? 10
+
+Chose a Car Manufacture: honda
+How Many Cars Would You Like? 7
+
+Chose a Car Manufacture: mclaren
+How Many Cars Would You Like? 3
+
+Chose a Car Manufacture: nissan
+How Many Cars Would You Like? 5
+
+Chose a Car Manufacture: mini
+How Many Cars Would You Like? 3
+
+Chose a Car Manufacture: kia
+How Many Cars Would You Like? 0
+
+Chose a Car Manufacture: koenigsegg
+How Many Cars Would You Like? 2
+
+Chose a Car Manufacture: pagani
+How Many Cars Would You Like? 3
+
+
+
+bmw : 10
+ferrari : 15
+honda : 7
+kia : 0
+koenigsegg : 2
+mclaren : 3
+mini : 3
+nissan : 5
+pagani : 3
+porsche : 10
+
+
+]0;002505606@jb358-6:~/cse330/lab9[002505606@jb358-6 lab9]$ exit
+
+Script done on Wed 27 Nov 2013 11:54:45 AM PST

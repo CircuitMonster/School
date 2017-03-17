@@ -1,0 +1,78 @@
+/*
+Name: Brian Ackley
+CSE 330
+Lab 1
+*/
+
+#include <iostream>
+#include <string>
+#include <stack>
+using namespace std;
+
+bool prec(char a, char b);
+
+int main()
+{
+   string infix;
+   stack<char> signs;
+   char num;
+
+   cout << "Enter in an infix expression: ";
+   cin >> infix;
+//   signs.empty();
+
+   for (int i = 0; i < infix.length(); i++)
+   {
+     num = infix[i];
+      if (num != '+' && num != '-' && num != '*' && num != '/' && num != '(' && num != ')')
+         {
+	    cout << num;
+	 }
+      else if (num == '(')
+	 {
+	    signs.push(num);
+	 }
+      else if (num == ')') 
+         {
+	    while (signs.top() != '(')
+	    {
+		cout << signs.top();
+		signs.pop();
+	    }
+	    if (signs.top() == '(')
+	    {
+		signs.pop();
+	    }
+	 }
+      else if (num == '+'|| num == '-' || num == '*' || num == '/')
+	 {
+	    if (signs.empty())
+	    {
+		signs.push(num);
+	    }
+	    else
+		{
+		   while (!signs.empty() && signs.top() != '(' && prec(num, signs.top()) )
+	  	   {
+		      cout << signs.top();
+		      signs.pop();
+		   }
+		   signs.push(num);
+		}
+	 }
+   }
+
+
+         while (!signs.empty())
+        {
+           cout << signs.top();
+           signs.pop();
+        }
+   cout << endl << endl;
+}
+
+bool prec(char a, char b)
+{
+   return(b == '*' || b == '/' || a == '+' || a == '-');
+}
+

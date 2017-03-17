@@ -1,0 +1,152 @@
+1.
+
+bool sameLength(vector <int> & a, const vector<int> & b);
+{
+	if (a.size() == b.size())
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	} 
+}
+
+//test code
+
+vector<int> a1;
+vector<int> b1;
+a1.push_back(7);
+assert(!sameLength(a, b));
+
+b1.push_back(5);
+assert(sameLength(a, b));
+
+cout << "all test pass." << endl;
+
+
+
+2.
+
+bool isIdentical(vector<int> & a, const vector<int> & b);
+{
+	if (a[i] !== b[i])
+	{
+		return false;
+	}
+	
+	for (int i = 0; i < a.size(); ++i)
+	{
+		if (a[i] !== b[i])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+//test code
+
+vector<int> a;
+vector<int> b;
+a.push_back(0);
+a.push_back(5);
+b.push_back(0);
+b.push_back(5);
+assert(isIdentical(a, b));
+
+vector<int> a2;
+vector<int> b2;
+a2.push_back(0);
+a2.push_back(5);
+b2.push_back(0);
+b2.push_back(5);
+b2.push_back(7);
+assert(isIdentical(a2, b2));
+
+vector<int> a3;
+vector<int> b3;
+a3.push_back(0);
+a3.push_back(5);
+a3.push_back(9);
+b3.push_back(0);
+b3.push_back(5);
+b3.push_back(7);
+assert(isIdentical(a3, b3));
+
+cout << "all test pass." << endl;
+
+
+
+3.
+
+bool isNonDecreasing(const vector<int> & v);
+{
+	for (int i = 0; i < v.size() - 1; ++i)
+	{
+		if (v[i] > v[i+1])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+//test code
+
+vector<int> v;
+v.push_back(3);
+v.push_back(4);
+v.push_back(4);
+v.push_back(6);
+v.push_back(8);
+assert(isNonDecreasing(v));
+
+vector<int> v2;
+v2.push_back(3);
+v2.push_back(4);
+v2.push_back(4);
+v2.push_back(6);
+v2.push_back(8);
+v2.push_back(7);
+assert(!isNonDecreasing(v2));
+
+
+
+4.
+
+void addThree(int a[ROWS] [COLS]);
+{
+	for (int r = 0; r < Rows; ++r)
+	{
+		for (int c = 0; c < COLS; ++c)
+		{
+			a[r][c] += 3;
+		}
+	}
+}
+
+
+
+
+5.
+
+void randomFill(vevtor<int> & v);
+{
+	while (v.size() < 100)
+	{
+		int n = rand();
+		bool nIsGoodNumber = true;
+		for (int j = 0; j < v.size(); ++j)
+		{
+			if (v[j] == n)
+			{
+				nIsGoodNumber = false;
+			}
+		}
+		if (nIsGoodNumber)
+		{
+			v.push_back(n);
+		}
+	}
+}

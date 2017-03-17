@@ -1,0 +1,30 @@
+/*
+Name: Brian Ackley
+Assignment 3
+File: StaffST.cpp
+Description: Functions for the StaffST class
+*/
+
+#include "StaffST.h"
+#include <string>
+using namespace std;
+
+StaffST::StaffST():Student(),Staff()
+{
+}
+
+StaffST::StaffST(string n, string addr, string tele, string mail, string offc, string slry, string hdate, string title, string stat, int chours)
+: Student(n, addr, tele, mail, stat), Staff(n, addr, tele, mail, offc, slry, hdate, title)
+{
+   credithours = chours;
+}
+
+int StaffST::getCredithours()
+{
+   return credithours;
+}
+
+string StaffST::whatami()
+{
+   return "StaffST";
+}

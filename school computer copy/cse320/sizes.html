@@ -1,0 +1,46 @@
+ <HTML><head><title>Lab 7</title></head>
+
+ <body>
+
+Data types in C++ vary in many ways. the amount of bytes, or the size, of an object can vary depending on what the object is. When it comes to pointers, pointers dont vary in size depending on what they are pointing to, but rather the memory location that they are pointing to; which changes depending on the system running it. Arrays vary in size depending on what they are assigned since an array has to have a size assigned to it, where as vectors dont. Vetors always show the constant size.
+<br>
+<br>
+<b>    Questions</b>
+<br>
+<br>
+<b>    Do all pointer types (T*) need the same storage?</b>
+<br>
+<br>
+
+	The pointer types don't need to have the same storage since they are all assigned to different locations in memory.
+
+<br>
+<br>
+    <b>Does the size of a pointer (T*) reflect the size of thing pointed at(T)?</b>
+<br>
+<br>
+
+	No, the size of a pointer doesn't reflect the thing it is pointing to, rather it's size is reflecting to the memory location it is pointing to.
+<br>
+<br>
+   <b> Does the size of an array vary with the number of elements?</b>
+<br>
+<br>
+
+	The size of the array will change on the number of element that it contains; or that its assigned to it. Arrays require a value given to them.
+<br>
+<br>
+    <b>Does the size of a vector vary with the number of elements? (and where does the rest of the vector get hidden?)</b>
+<br>
+<br>
+
+	A vector will vary with the number of elements within it, but it does it dynamicly. The value of the vector doesnt change itself since it manages memory personally.
+ When the value is checked it alwasy brings the same size because when its being checked for its value its only showing the value of its scope and not of the array(s) 
+within the vector. the rest of the vecotor is not hidden, again its just showing its value at its scope before the array within is even accessed.
+<br>
+<br>
+<a href="http://cse.csusb.edu/public/csci/002505606/sizes.cpp">Source Code</A>
+
+ </body>
+
+ </HTML>

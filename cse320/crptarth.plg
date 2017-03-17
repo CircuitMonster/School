@@ -1,0 +1,58 @@
+% A sample crytarithm problem from Schnupp and Barnard pp94-95
+% Shows the use of a list of variables to keep track of whether
+% they have been assumed to have values or not yet.
+:-op(100, xfx, not_in).
+_ not_in [].
+D not_in [X | Rest]:- var(X),! , %added to reduce trail
+	D not_in Rest.
+D not_in [X | Rest]:- nonvar(X), D\==X,!, %added to reduce trail
+	 D not_in Rest.
+
+digit(0). digit(1). digit(2). digit(3). digit(4). digit(5). digit(6).
+digit(7). digit(8). digit(9).
+
+carry(0). carry(1).
+
+go:-send_more_money([S,E,N,D,M,O,R,Y]),result([S,E,N,D,M,O,R,Y]).
+
+result([S,E,N,D,M,O,R,Y]):-
+	nl,write('  S E N D'),tab(5),  out([' ', S, E, N, D]),
+	nl,write('  M O R E'), tab(5), out([' ', M, O, R, E]),
+	nl,write('---------'), tab(5), write(--------------),
+	nl,write('M O N E Y'), tab(5), out([M, O, N, E, Y]),
+	nl.
+
+out([]).
+out([C|Rest]):-write(C), write(' '), out(Rest).
+
+send_more_money(DigitList):-
+	DigitList=[S,E,N,D,M,O,R,Y],
+	M=1,		 % because M is carry into most significant
+	digit(S), S\=0,  % because S is most significant digit
+	column(1,0,0,C2,M,0,DigitList),  %Cn are the carries
+	column(2,S,M,C3,O,C2,DigitList),
+	column(3,E,O,C4,N,C3,DigitList),
+	column(4,N,R,C4,E,C5,DigitList),
+	column(5,D,E, 0,Y,C5,DigitList).
+
+column(Col,DigitInLine1, DigitInLine2, Carry, DigitInLine3, NewCarry, DigitList):-
+	carry(Carry), %try 0 and 1 in turn
+	try_digit(Col,1, DigitInLine1,DigitList),
+	try_digit(Col,2, DigitInLine2,DigitList),
+	Sum is DigitInLine1+DigitInLine2+Carry,
+	NewCarry is Sum // 10,
+	X3 is Sum - (10*NewCarry),
+	(var(DigitInLine3), X3 not_in DigitList
+	;  nonvar(DigitInLine3)
+	),
+	DigitInLine3=X3.
+try_digit(Column,Line,Digit,DigitList):- nonvar(Digit),!. 
+			% cuts added to reduce trail
+			% Column and Line are for tracing
+try_digit(Column,Line,Digit,DigitList):-
+	var(Digit),!, digit(X1), X1 not_in DigitList, Digit=X1.
+
+:- write(''), nl.
+:- write(''), nl.
+:- write('The puzzle SEND+MORE=MONEY has been loaded'), nl.
+:- write('To solve it try go. ...'), nl.

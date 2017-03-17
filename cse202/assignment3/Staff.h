@@ -1,0 +1,25 @@
+/*
+Name: Brian Ackley
+Assignment 3
+File: Staff.h
+Description: interface for the Staff class
+*/
+
+#ifndef STAFF_H
+#define STAFF_H
+#include <string>
+#include "Employee.h"
+using namespace std;
+
+class Staff: public virtual Employee
+{
+public: 
+   Staff();
+   Staff(string n, string addr, string tele, string mail, string offc, string slry, string hdate, string title);
+   string getJobtitle();
+   virtual string whatami();
+
+private:
+   string jobtitle;
+};
+#endif

@@ -1,0 +1,59 @@
+/*
+Name: Brian Ackley
+CSE 330
+Extra Credit
+//implementation and testing of the selection sort algorithm
+*/
+
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int selection_sort(vector<int>&nums)
+{
+   int m;
+   int comps = 0;
+   for (int i = 0; i < nums.size()-1; i++)
+   {
+      m = i;
+      for (int j = i+1; j < nums.size(); j++)
+      {
+         if (nums[m] > nums[j])
+            m = j;
+         comps++;
+      }
+   int temp = nums[i];
+   nums[i] = nums[m];
+   nums[m] = temp;
+   }
+   return comps;
+}
+
+int main()
+{
+   for (int i = 0; i < 5; i++)
+   {
+      vector<int> vec1;
+
+      int S;
+      cout << "\nEnter Size of Vector: ";
+      cin >> S;
+
+      for (int i = 0; i < S; i++)
+      {
+         int x;
+         cout << "\nEnter an integer value:";
+         cin >> x;
+         vec1.push_back(x);
+      }
+      cout << "Number of calculations is: " << selection_sort(vec1) << endl;
+
+      for (int i = 0; i < vec1.size(); i++)
+      {
+         cout << vec1[i] << " ";
+      }
+   cout << endl;
+   }
+}

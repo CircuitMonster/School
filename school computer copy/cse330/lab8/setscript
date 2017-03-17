@@ -1,0 +1,29 @@
+Script started on Wed 20 Nov 2013 01:40:33 PM PST
+]0;002505606@jb358-6:/students/csci/002505606/cse330[?1034h[002505606@jb358-6 cse330]$ g++ -o lab8 SetMain.cpp
+]0;002505606@jb358-6:/students/csci/002505606/cse330[002505606@jb358-6 cse330]$ g++ -o lab8 SetMain.cpp[K./lab8
+
+[integer] 7
+
+[integer] 65
+
+[integer] 4
+
+[integer] 9
+
+[integer] 50
+
+
+4 7 9 50 65 
+
+Set Size is: 5
+Enter integer to be searched for: 50
+found
+Enter integer to be searched for: 7
+found
+Enter integer to be searched for: 3
+not found
+Enter integer to be searched for: 77
+not found
+]0;002505606@jb358-6:/students/csci/002505606/cse330[002505606@jb358-6 cse330]$ exit
+
+Script done on Wed 20 Nov 2013 01:41:30 PM PST

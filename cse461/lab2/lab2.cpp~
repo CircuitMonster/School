@@ -1,0 +1,73 @@
+/*
+Brian Ackley
+CSE461
+Spring 2015
+Lab 2/ HW 1
+*/
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+class Sdisk
+{
+public :
+	Sdisk(string diskname, int numberofblocks, int blocksize);
+	int getblock(int blocknumber, string& buffer);
+	int putblock(int blocknumber, string buffer);
+private :
+	string diskname;        // file name of pseudo-disk
+	int numberofblocks;     // number of blocks on disk
+	int blocksize;          // block size in bytes
+};
+
+Sdisk::Sdisk(string diskname, int numberofblocks, int blocksize)
+{
+	string temp = diskname + ".dat";
+	fstream checkfile;
+	checkfile.open(temp.c_str(), ios::in | ios::out);
+	char s = checkfile.get();
+	if (s = '#')
+	{
+		cout << "can not open file" << endl;
+		this-> diskname = diskname;
+		this-> numberofblocks = numberofblocks;
+		this-> blocksize = blocksize;
+	}
+	else
+	{
+		this-> diskname = diskname;
+		this-> numberofblocks = numberofblocks;
+		this-> blocksize = blocksize;
+		string tempSpc = diskname + ".spc";
+		string tempDat = diskname + ".dat";
+		ofstream out;
+		out.open(tempSpc.c_str());
+		out << numberofblocks << " " << blocksize;
+		out.close();
+		ostringstream build;
+		out.open(tempDat.c_str());
+		cout << "create disk" << " " << diskname << endl;
+		for (int i = 0; i < numberofblocks; i++)
+		{
+			for (int j = 0; j < blocksize; j++)
+			{
+				out.put("#");
+			}
+			out.put('\n');
+		}
+		out.close();
+	}
+
+	
+}
+
+
+
+
+int main()
+{
+
+}

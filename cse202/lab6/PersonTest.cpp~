@@ -1,0 +1,26 @@
+/*
+Name: Brian Ackley
+Date: 2-14-13
+File: PersonTest.cpp
+Lab # 6
+Description:
+*/
+
+#include "Person.h"
+#include "Location.h"
+#include <iostream>
+#include <string>
+using namespace std;
+    
+int main()
+{
+   Person t("Bill", "Gates", "Microsoft");
+   Location r("123 Fake st.", "Building #50", "Room 501");
+    
+   cout << t.getName() << endl;
+   cout << t.getCompany() << endl;
+
+   cout << r.getLocationAddress() << endl;
+   cout << r.getLocationBuilding() << endl;
+   cout << r.getLocationRoom() << endl;
+}

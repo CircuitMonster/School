@@ -1,0 +1,21 @@
+Script started on Wed 27 Nov 2013 10:59:01 AM PST
+]0;002505606@jb358-6:/students/csci/002505606/cse330/assignment3[?1034h[002505606@jb358-6 assignment3]$ g++ -o assignment3 assignment3.cpp
+]0;002505606@jb358-6:/students/csci/002505606/cse330/assignment3[002505606@jb358-6 assignment3]$ ./assignment3
+Enter Size of Vector 10
+Random numbers from 1 to: 50
+Vector with random numbers: 5 10 14 26 20 14 34 34 17 7 
+Vector sorted: 5 7 10 14 17 20 26 34 
+
+Enter Size of Vector 77  10
+Random numbers from 1 to: 77
+Vector with random numbers: 30 56 54 44 23 17 56 66 16 68 
+Vector sorted: 16 17 23 30 44 54 56 66 68 
+
+Enter Size of Vector 250   10
+Random numbers from 1 to: 250
+Vector with random numbers: 172 50 39 129 147 74 131 124 126 183 
+Vector sorted: 39 50 74 124 126 129 131 147 172 183 
+
+]0;002505606@jb358-6:/students/csci/002505606/cse330/assignment3[002505606@jb358-6 assignment3]$ exit
+
+Script done on Wed 27 Nov 2013 10:59:52 AM PST

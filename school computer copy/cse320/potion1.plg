@@ -1,0 +1,33 @@
+% Harry Potter and the seven potions
+
+puzzle(Potions):- 
+ % seven potions in a row
+	Potions=[P1,P2,P3,P4,P5,P6,P7],
+ % one forward, one backward, 2 wines, and 3 poisons in some order
+	permutation(Potions, [forward,back,wine,wine,poison,poison,poison]),
+ % Look at the drawing for the biggest and smallest
+	Dwarf=P3, Giant=P2, 
+ % First clue -- Each wine bottle has poison on the left
+	P1\==wine,
+	(P2\==wine; P1=poison),
+	(P3\==wine; P2=poison),
+	(P4\==wine; P3=poison),
+	(P5\==wine; P4=poison),
+	(P6\==wine; P5=poison),
+	(P7\==wine; P6=poison),
+ % Second clue -- the ends are different
+	P1\==P7,
+ % and neither end moves you forward
+	P1\==forward, P7\==forward,
+ % Third clue -- The largest and smallest are not poison
+	Dwarf\==poison, Giant\==poison,
+ % Fourth clue -- second left and second on the right are the same
+	P2==P6.
+
+solve(S):-setof(P,puzzle(P),S).
+
+writeSet(S):-member(T,S), write(T),nl,fail.
+
+go:-solve(S), writeSet(S).
+
+:-write('puzzle/1, solve/1, writeSet/1, go/0 loaded. Type go. to see solution').

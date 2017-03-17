@@ -1,0 +1,23 @@
+
+To compile for PC:
+	$make
+
+You make need to adjust the paths in Makefile.
+
+To run the program:
+	./tictactoe
+
+A music is played at the background.
+To quit the program, type 'ESC' key.
+
+Use the mouse to click on different quadrants of #; you
+play against the computer.  When a result is determined, it displays 
+a message like "I win" or "I lost" in the console, playing a short sound
+while the background music  stops.  You can restart the game
+by pressing 's' or 'S'.
+
+You have to type 'ESC' to quit.
+
+This tictactoe program also allows you to enter
+location via keyboard.  Enter 0, 1, 2, 3, 4, 5, 6, 7, 8 would place
+the user's mark on the board. 

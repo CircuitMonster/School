@@ -1,0 +1,75 @@
+/*
+Name: Brian Ackley
+CSE 330
+Professor: Kerstin Voigt
+Lab #5
+*/
+
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int OPSCOUNT = 0;
+
+int main()
+{
+   int n = 5;
+
+for (int i = n; i <= 50; i+=5)
+{
+   n=i;
+
+//div7prnt5x code
+   OPSCOUNT = 0;
+   int x = n/7;
+
+   for (int i = 0; i < 5; i++)
+   {
+      cout << x << " ";
+      OPSCOUNT+=1;
+   }
+   cout << endl;
+   cout << "OPSCOUNT: " << OPSCOUNT << endl << endl;
+
+//Line Code
+   OPSCOUNT = 0;
+   for (int i = 0; i < n; i++)
+   {
+      cout << "x" << " ";
+      OPSCOUNT+=1;
+   }
+   cout << endl;
+   cout << "OPSCOUNT: " << OPSCOUNT << endl << endl;
+
+//Square Code
+   OPSCOUNT = 0;
+   for (int i = 0; i < n; i++)
+   {
+      for (int i = 0; i < n; i++)
+      {
+	 cout << "x" << " ";
+	 OPSCOUNT+=1;
+      }
+	 cout << endl;
+         OPSCOUNT+=1;
+   }
+   cout << endl;
+   cout << "OPSCOUNT: " << OPSCOUNT << endl << endl;
+
+//Triangle code
+   OPSCOUNT = 0;
+   for (int i = 1; i <= n; i++)
+   {
+      for (int j = 0; j < i; j++)
+      {
+	 cout << "x" << " ";
+	 OPSCOUNT+=1;
+      }
+      cout << endl;
+      OPSCOUNT+=1;
+   }
+   cout << endl;
+   cout << "OPSCOUNT: " << OPSCOUNT << endl << endl;
+}
+}

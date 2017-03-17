@@ -1,0 +1,56 @@
+Script started on Wed 30 Oct 2013 02:39:58 PM PDT
+]0;002505606@jb358-6:/students/csci/002505606/cse330[?1034h[002505606@jb358-6 cse330]$ gedit typescriptls[Kscript [2Pclear./lab4g++ -o lab4  Lab4Main.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp[1P.cpp5.cpp .cppl.cppa.cppb.cpp5.cpp
+]0;002505606@jb358-6:/students/csci/002505606/cse330[002505606@jb358-6 cse330]$ ./lab5
+OPSCOUNT: 5
+OPSCOUNT: 5
+OPSCOUNT: 30
+OPSCOUNT: 20
+
+OPSCOUNT: 5
+OPSCOUNT: 10
+OPSCOUNT: 110
+OPSCOUNT: 65
+
+OPSCOUNT: 5
+OPSCOUNT: 15
+OPSCOUNT: 240
+OPSCOUNT: 135
+
+OPSCOUNT: 5
+OPSCOUNT: 20
+OPSCOUNT: 420
+OPSCOUNT: 230
+
+OPSCOUNT: 5
+OPSCOUNT: 25
+OPSCOUNT: 650
+OPSCOUNT: 350
+
+OPSCOUNT: 5
+OPSCOUNT: 30
+OPSCOUNT: 930
+OPSCOUNT: 495
+
+OPSCOUNT: 5
+OPSCOUNT: 35
+OPSCOUNT: 1260
+OPSCOUNT: 665
+
+OPSCOUNT: 5
+OPSCOUNT: 40
+OPSCOUNT: 1640
+OPSCOUNT: 860
+
+OPSCOUNT: 5
+OPSCOUNT: 45
+OPSCOUNT: 2070
+OPSCOUNT: 1080
+
+OPSCOUNT: 5
+OPSCOUNT: 50
+OPSCOUNT: 2550
+OPSCOUNT: 1325
+
+]0;002505606@jb358-6:/students/csci/002505606/cse330[002505606@jb358-6 cse330]$ exit
+
+Script done on Wed 30 Oct 2013 02:40:31 PM PDT

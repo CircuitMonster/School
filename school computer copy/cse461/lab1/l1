@@ -1,0 +1,10 @@
+Script started on Tue 14 Apr 2015 03:23:00 PM PDT
+]0;002505606@jb358-20:/students/csci/002505606/cse461[?1034h[002505606@jb358-20 cse461]$ gedit main.cpp[8P./maingedit main.cpp[9Pcleargedit password.txt[6Ppassword.txtgedit main.cpp[8P./maingedit userpw.hpasswordfile.h[4P.hfile.h[6Puserpw.h[8P./maingedit main.cpp[2Ppassword.txtgedit password.txtclear[Kgedit main.cpp[8P./main[K[K[K[K[K[Kg++ -o lab1 lab1.cpp
+]0;002505606@jb358-20:/students/csci/002505606/cse461[002505606@jb358-20 cse461]$ ./lab1
+correct name and password
+correct name and password
+incorrect name and password
+]0;002505606@jb358-20:/students/csci/002505606/cse461[002505606@jb358-20 cse461]$ ^C
+]0;002505606@jb358-20:/students/csci/002505606/cse461[002505606@jb358-20 cse461]$ exit
+
+Script done on Tue 14 Apr 2015 03:23:31 PM PDT

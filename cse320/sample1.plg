@@ -1,0 +1,48 @@
+% A Sample Logic Problem. [ Original logic problems, July 1990, p 5]
+% Angela, David and Mae are the young stars in a talent show.
+% Their ages are 5,7, and 8. One has last name Starr.
+% Miss Grant is three years older than Angela.
+% The child whose last name is Diamond is seven years old
+%
+% compile/consult this file and then run 'go.' to see the answer.
+%
+first(angela). first(david). first(mae).
+male(david). female(angela). female(mae).
+age(5). age(7). age(8).
+last(diamond). last(grant). last(starr).
+
+:-style_check(-singleton).
+
+child(First,Last,Age):-first(First), last(Last), age(Age),
+	givens(First,Last,Age),
+	assertz(fact(First,Last,Age)).
+% The above tries combinations of names and ages against
+% the givens, and adds new data as a known fact
+% when a child has two names and an age.
+
+
+givens(First,Last,Age):-
+	if(male(First), Last\=grant),
+	if(Last=grant, female(First)),
+	iff(Last=diamond,Age=7),
+	iff(Last=grant,Age=8),
+	iff(First=angela,Age=5),
+	unknown(First, Last, Age).
+% once a case has been found, assume it eliminates
+% its values from other cases. 
+unknown(First, Last, Age):- not( fact(First,_,_) ),
+	not( fact(_,Last,_) ),
+	not( fact(_,_,Age) ).
+
+if(P,Q):- P->Q;true.
+iff(P,Q):-(P,Q); not( P ), not( Q ).
+
+:-dynamic(fact/3). % allow new facts to be added.
+
+go:-child(First, Last, Age), fail; listing(fact).
+% The 'fail' above forces Prolog to try and find another child.
+% When all the children are found prolog takes the next branch after
+%	the semicolon and lists the facts it has filed.
+
+:- write('Puzzle loaded'), nl.
+:- write('Input go. to start solving it...'), nl.

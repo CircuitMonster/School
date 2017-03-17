@@ -1,0 +1,22 @@
+ <HTML><head><title>Lab 9</title></head>
+
+ <body>
+
+ <h1>Duff's Device</h1>
+<br>
+	The changes that had to be made were that first off, send is not declared within C++. Since the "send" function doesnt ever change it, it was change to a void function. Next, the word register isn't classified in C++ as well, so making the register into an integer was the next step. Lastly it doesn't make sense to have the function classify "to, from and count" and then have it set as a register int; so what I then did was throw all the pointers of "to and from" into the function "send" and then include the int for count in the funtion as well. This eliminated the secondary definition of those variables. This shows that the code works throughout different languages well, but some minor changes may need to be changed since certain reserved words dont carry over. It has the benefit of doing a do loop realitivly easily, but depending on the complier it may run into issues.
+<br>
+<br>
+<a href="http://cse.csusb.edu/public/csci/002505606/lab9.cpp">Duff's Device edited code</A>
+<br>
+<h1>Jackson's Inversion</h1>
+<br>
+	The program runs the first loop seeing if it hits its expected value and continues to do so until it does hit the expected value. Once the expected value is hit, it then displays a message and continues on. The program is now left in the loop after which it hit its mark and stays there until the program is terminated. 
+<br>
+<br>
+<a href="http://cse.csusb.edu/public/csci/002505606/restart.cpp">Jackson's Inversion</A>
+
+  
+ </body>
+
+ </HTML>

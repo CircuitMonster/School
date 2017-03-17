@@ -1,0 +1,37 @@
+ <HTML><head><title>Brian Ackley</title></head>
+
+ <body>
+
+ <h1>Brian Ackley</h1>
+
+  <pre>
+
+ Hello, I'm a Computer Sceince Major at Cal State San Bernardino.
+
+ I am taking <a href="http://cse.csusb.edu/dick/cs320/">CS320</A>: Programming Languages.
+
+  </pre>
+
+  <h3>My CS320 Lab Work
+
+  </h3>
+
+ <ol>
+
+	  <li>
+
+ 		<a href="http://cse.csusb.edu/public/csci/002505606/04.cpp">A Simple C++ program</a>
+
+ 	  <li>
+
+ 		<a href="http://cui.unige.ch/db-research/Enseignement/analyseinfo/AboutBNF.html">BNF stands for "Backus Naur Form." BNF was so closely related to that of ALGOL 58. Today almost all books use BNF as reference to specify syntax rules.</a>
+
+ 		  <li>
+
+ 		<a href="file:///students/csci/002505606/lab5.html">Samples of UML</a>
+
+ </ol>
+
+ </body>
+
+ </HTML>

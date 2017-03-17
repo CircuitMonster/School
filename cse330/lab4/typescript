@@ -1,0 +1,28 @@
+Script started on Wed 23 Oct 2013 03:24:26 PM PDT
+]0;002505606@jb358-6:~/cse330/lab4[?1034h[002505606@jb358-6 lab4]$ gedit Lab4List.h&istMain.cpp[5P.h&ls[Kcd cse330g++ -o Lab3 ListMain.cppclear[Kg++ -o Lab3 ListMain.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klab$[K4 Lab4Main.cpp
+]0;002505606@jb358-6:~/cse330/lab4[002505606@jb358-6 lab4]$ ./lab5[K4
+
+How many values is your list? 10
+
+[integer] 1
+[integer] 2
+[integer] 3
+[integer] 4
+[integer] 5
+[integer] 6
+[integer] 7
+[integer] 8
+[integer] 9
+[integer] 0 10
+
+
+1 2 3 4 5 6 7 8 9 10 
+
+10 9 8 7 6 5 4 3 2 1 
+
+Segmentation fault
+]0;002505606@jb358-6:~/cse330/lab4[002505606@jb358-6 lab4]$ ^C
+]0;002505606@jb358-6:~/cse330/lab4[002505606@jb358-6 lab4]$ ^C
+]0;002505606@jb358-6:~/cse330/lab4[002505606@jb358-6 lab4]$ exit
+
+Script done on Wed 23 Oct 2013 03:25:20 PM PDT

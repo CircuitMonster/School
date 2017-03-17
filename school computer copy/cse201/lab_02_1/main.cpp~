@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(int argc, char * args[])
+{
+   	cout << "Hello, <user's name>. \n";
+	string name;
+	cin >> name;
+	cout <<"Hello";
+	cout << name;
+	cout <<". nice to meet you.";
+	cout << endl;
+}

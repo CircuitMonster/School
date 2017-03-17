@@ -1,0 +1,44 @@
+/*
+Name: Brian Ackley
+CSE 330
+Lab 9
+*/
+#include <iostream>
+#include <string>
+#include "Pair.h"
+#include <set> 
+
+using namespace std;
+
+int main()
+{
+  set<Pair<string,int> > basket;
+
+  string f;
+  int k;
+
+  for (int i = 1; i<= 10; i++)
+    {
+      cout << "Chose a Car Manufacture: ";
+      cin >> f;
+      cout << "How Many Cars Would You Like? ";
+      cin >> k;
+      cout << endl;
+
+      Pair<string,int> next(f,k);
+      basket.insert(next);
+    }
+
+  set<Pair<string,int> >::iterator itr = basket.begin();
+
+  cout << endl << endl;
+  for(; itr != basket.end(); ++itr)
+    {
+      cout << (*itr).first << " : " << (*itr).second << endl;
+    }
+  cout << endl << endl;
+  
+  return 0;
+}
+
+      
